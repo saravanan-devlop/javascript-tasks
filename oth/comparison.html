@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- html -->
+    <h1>Form</h1>
+    <label>Enter your first value:</label>
+    <input type="number" id="value1"><br>
+    <label>Enter your second value:</label>
+    <input type="number" id="value2">
+    <input type="button" value="show" onclick="result()">
+    <!-- Js code -->
+    <script>
+        function result(){
+            var a=document.getElementById('value1').value;
+            var b=document.getElementById('value2').value;
+            if((a!=='') && (b!==''))
+                if(a==b)
+                {
+                    alert("Data's are equal");
+                }
+                else{
+                    alert("Data's are not equal");
+                }
+            else{
+                alert("One of your data is empty");
+            }
+        }
+    </script>
+    
+</body>
+</html>

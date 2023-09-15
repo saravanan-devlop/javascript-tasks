@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mylocation"></div>
+    </div>
+    <button onclick="showcontent()">show content</button>
+    <script>
+        function showcontent(){
+            var data="name: <input type='text' name='t1'> <br> Address: <textarea cols='5',row='10'></textarea><br><button>comment</button>";
+        document.getElementById("mylocation").innerHTML=data;}     
+    </script>
+    <script>
+        typeof undefined // "undefined"
+
+typeof 0 // "number"
+
+typeof 10n // "bigint"
+
+typeof true // "boolean"
+
+typeof "foo" // "string"
+
+typeof Symbol("id") // "symbol"
+
+typeof Math // "object"  (1)
+
+typeof null // "object"  (2)
+
+typeof alert // "function"  (3)
+let a=20;
+let b="hello";
+let c=a!=b;
+console.log(typeof(a));
+console.log(typeof(b));
+console.log(typeof(c));
+
+let d=prompt("I am saravanan",20);
+alert(`show messgae ${d}`);
+
+
+let e=prompt("Name",'');
+alert(e);
+
+function evalNumber(a,b,oper){
+if(oper==add){
+console.log("Addition of two numbers "+(a+b));
+}
+else if(oper==sub){
+console.log("Subtraction of two numbers "+(a-b));
+}
+else if(oper==mul){
+console.log("Multiplication of two numbers "+(a*b));
+}
+else if(oper==div){
+console.log("Division of two numbers "+(a/b));
+}
+else if(oper==mod){
+console.log("Modules of two number "+(a%b));
+}
+}
+evalNumber(5,20,'sub');
+
+
+function findDaysInMonth(month,year){
+if((month>=1)&&(month<=12))
+{
+console.log("Invalid month");
+}
+else if(month==2){
+if((year%4==0)&&(year%100!=0)||(year%400==0))
+{
+console.log("29 days");
+}
+else{
+console.log("28 days");
+}
+}
+else if(month==4 || month==6 ||month==9|| month==11)
+{
+console.log("30days");
+}
+else{
+console.log("31 days");
+}
+}
+const month=2;
+const year=2012;
+const result=findDaysInMonth(month,year);
+console.log(result);
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing Data Dropdown</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function adding1()
+        {
+            var nInput=parseInt(document.getElementById("box").value);
+            var oInput=document.getElementById("add");
+            var child=document.createElement("option");
+            var node=document.createTextNode(nInput);
+            child.appendChild(node);
+            oInput.appendChild(child);
+            document.getElementById("box").value=null;
+        }
+        function adding2()
+        {
+            var get=parseInt(document.getElementById("add").value);
+            var select=document.getElementById("iterate");
+            var option1="<option>"+(get-1)+"</option>";
+            select.innerHTML=option1;
+            
+
+        }
+    </script>
+
+    <h1>List the Input</h1>
+    <input type="number" id="box">
+    <input type="button" onclick="adding1()" value="click to Add">
+    <select id="add" onmouseout="adding2()"></select>
+    <select id="iterate"></select>
+</body>
+</html>

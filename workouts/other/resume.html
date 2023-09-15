@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- html code -->
+    <div id="into">
+
+    </div>
+    <div id="pic">
+
+    </div>
+    <div id="qualification">
+
+    </div>
+    <div id="interest">
+
+    </div>
+    <!-- js code -->
+    <script>
+        var fdiv=document.getElementById('into');
+        var fpar=document.createElement('p');
+        var myname=document.createTextNode('Name: Saravanan S');
+        fpar.appendChild(myname);
+        fdiv.appendChild(fpar);
+
+        var spar=document.createElement('p');
+        var myemail=document.createTextNode('Email: saravanan@gmail.com');
+        spar.appendChild(myemail);
+        fpar.appendChild(spar);
+        // image
+        var sdiv=document.getElementById('pic');
+        var profile=document.createElement('IMG');
+        profile.setAttribute('src','https://static.vecteezy.com/system/resources/thumbnails/019/900/322/small/happy-young-cute-illustration-face-profile-png.png');
+        profile.setAttribute('height','200');
+        profile.setAttribute('width','200');
+        profile.setAttribute('alt','image no visible');
+        sdiv.appendChild(profile);
+        // aim
+        var head1=document.createElement('h3');
+        var h1txt=document.createTextNode('AIM');
+        var par1=document.createElement('p');
+        var par1txt=document.createTextNode('A fresher who wishes to equip myself with additional skills and hone my leadership skills by working with a team that enables me to develop and work hard.');
+        par1.appendChild(par1txt);
+        head1.appendChild(h1txt);
+        fdiv.appendChild(head1);
+        fdiv.appendChild(par1);
+        // Qualification
+        var tdiv=document.getElementById('qualification');
+        var head2=document.createElement('h3');
+        var h2txt=document.createTextNode('Qualification');
+        head2.appendChild(h2txt);
+        tdiv.appendChild(head2);
+
+        var a=document.createElement('ul');
+        var b=document.createElement('li');
+        var c=document.createTextNode('Bachelor of Computer Apllication with 83%');
+        b.appendChild(c);
+        a.appendChild(b);
+        tdiv.appendChild(a);
+
+        var d=document.createTextNode('HSC with 76%');
+        var b1=document.createElement('li');
+        b1.appendChild(d);
+        a.appendChild(b1);
+
+        var b2=document.createElement('li');
+        var e=document.createTextNode('SSLC with 80%');
+        b2.appendChild(e);
+        a.appendChild(b2);
+    </script>
+</body>
+</html>

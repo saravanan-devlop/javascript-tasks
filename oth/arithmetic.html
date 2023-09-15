@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- html -->
+    <h1>Form</h1>
+    <label>Enter your first value:</label>
+    <input type="number" id="value1"><br>
+    <label>Enter your second value:</label>
+    <input type="number" id="value2"><br>
+    <input type="button" value="Addition" onclick="result('add')">
+    <input type="button" value="Substraction" onclick="result('sub')">
+    <input type="button" value="Muiltiplication" onclick="result('mul')">
+    <input type="button" value="Division" onclick="result('div')">
+    <p id="demo"></p>
+
+    <!-- Js code -->
+    <script>
+        function result(oper){
+            var a=parseInt(document.getElementById('value1').value);
+            var b=parseInt(document.getElementById('value2').value);
+            if(oper=='add')
+            {
+             document.getElementById('demo').innerHTML=a+b;
+            }
+            else if(oper=='sub')
+            {
+            document.getElementById('demo').innerHTML=a-b;
+            }
+            else if(oper=='mul')
+            {
+            document.getElementById('demo').innerHTML=a*b;
+            }
+            else if(oper=='div')
+            {
+            document.getElementById('demo').innerHTML=a/b;
+            }
+            else{
+                alert("enter valid number");
+            }
+
+        }
+    </script>
+</body>
+</html>

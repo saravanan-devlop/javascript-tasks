@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form name="form1">
+            Enter the number:
+            <input type="number" name="number" id="num"/>
+            <input type="button" value="submit" onclick="show()"/>
+        </form>
+
+        <script>
+            function show()
+            {
+                var cube=document.getElementById('num').value;
+                alert(cube*cube*cube);
+            }
+        </script>
+    </body>
+</html>

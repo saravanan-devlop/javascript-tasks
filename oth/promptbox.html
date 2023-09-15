@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mark=parseInt(prompt("Enter the value"));
+        function display(mark){
+            switch (true) {
+                case (mark>=80 && mark<=100):
+                    document.write("A grade");
+                break;
+                 case (mark>=60 && mark<=40):
+                    document.write("B grade");
+                break;
+                case (mark>=0 && mark<=39):
+                    document.write("C grade");
+                break;
+                default:
+                    document.write("Enter valid number");
+                    break;
+            }
+
+        }
+        display(mark);
+</script>
+</body>
+</html>

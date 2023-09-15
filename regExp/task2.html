@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function show()
+        {
+        var a=document.getElementById("pass").value;
+        var regex=/^[a-zA-Z0-9*$@%^&]+$/;
+        if(regex.test(a)&&a.length<6)
+    {
+        document.getElementById("mynum").innerHTML=" * please enter valid password";
+        document.getElementById("mynum").style.color="red";
+        document.getElementById("pass").style.borderColor="red";
+}
+   else{
+        document.getElementById("mynum").innerHTML="you are created strong password";
+        document.getElementById("mynum").style.color="green";
+        document.getElementById("pass").style.borderColor="";
+    }
+}
+    </script>
+</head>
+<body>
+    <label>password</label>
+    <input type="password" id="pass"><span id="mynum"></span>
+    <button onclick="show()">submit</button>
+</body>
+</html>

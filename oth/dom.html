@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form name="form1">
+        <h1 id="heading">software programing student</h1>
+        <input type="button" value="print" onclick="textchange()">
+        <table width="300" height="300" border="2">
+            <tr><td id="r1"></td></tr>
+            <tr><td id="r2"></td></tr>
+            <tr><td id="r3"></td></tr>
+            <tr><td id="r4"></td></tr>
+        </table>
+    </form>
+    <script>
+        function textchange(){
+            document.getElementById("heading").textContent="Full Stack Development Batch-18";
+            document.getElementById("heading").style.fontFamily="century";
+            document.getElementById("heading").style.color="red";
+            document.getElementById("heading").style.background="yellow";
+            document.getElementById("r1").style.background="blue";
+            document.getElementById("r2").style.background="green";
+            document.getElementById("r3").style.background="tomato";
+            document.getElementById("r4").style.background="black";
+
+
+
+        }
+    </script> -->
+    <form name="form1">
+        <h1 id="heading">software programming student</h1>
+        <input type="radio" id="male" name="gender" value="male">male<br>
+        <input type="radio" name="gender" value="female">female<br>
+        <input type="radio" name="gender" value="transgender">transgender<br>
+        <input type="button" value="print" onclick="show()">
+
+
+    </form>
+    <script>
+        function show()
+        {
+            var allgender=document.getElementsByName("gender");
+            alert(allgender.length);
+            // var male=document.getElementById("male").value;
+            // alert("male is clicked");
+        }
+    </script>
+</body>
+</html>

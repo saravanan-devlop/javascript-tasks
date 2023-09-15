@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="number" id="txt"/>
+        <input type="button" value="check" onkeypress="show()"/>
+        <select name="" id="place"></select>
+    </form>
+
+    <!-- Js code -->
+    <script>
+        function show(){
+            var a=Number(document.getElementById('txt').value);
+            var b=document.getElementById('place');
+            for(n=1;n<=a;n++)
+            {
+                var c=document.createElement("Option");
+                var d=document.createTextNode(n);
+                c.appendChild(d);
+                b.appendChild(c);
+            }
+        }
+    </script>
+</body>
+</html>

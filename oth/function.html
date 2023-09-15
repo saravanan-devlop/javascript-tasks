@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        function getNationalBird(){
+console.log("Peacock");
+
+}
+getNationalBird();
+    </script> -->
+    <script>
+        // function triangle()
+        // {
+        //     for(let i=1;i<=5;i++)
+        //     {
+        //         for(let j=1;j<=i;j++)
+        //         {
+        //             document.write("*"+"  ");
+        //         }
+        //         document.write("<br>");
+        //     }
+        // }
+        // triangle();
+       /* function showOperation(num1,num2,oper)
+        {
+            if(oper=="add")
+            {
+                document.write(num1+num2);
+            }
+            else if(oper=="sub")
+            {
+                document.write(num1-num2);
+            }
+            else if(oper=="multi")
+            {
+                document.write(num1*num2);
+            }
+            else if(oper=="bit_and")
+            {
+                document.write(num1&num2);
+            }
+
+        }*/
+        // function wel()
+        // {
+        //     return 2*3;
+        // }
+        // var ans=wel();
+        // console.log(ans);
+        // function name1(isro)
+        // {
+        //     return isro;
+        // }
+        // var v1=name1("chandrayan-3");
+        // console.log(v1);
+        // function printvalue()
+        // {
+        //     var msg=document.form1.t1.value;
+        //     alert(msg);
+        // }
+        function findcube()
+        {
+            var num=document.getElementById("t1").value;
+            alert("cube"+(num*num*num));
+        }
+    </script>
+
+    <!-- <button onclick="showOperation(10,23,'add')">sum</button>
+    <button onclick="showOperation(24,5,'sub')">sub</button>
+    <button onclick="showOperation(100,8,'multi')">product</button>
+    <button onclick="showOperation(5,6,'bit_and')">bitwise and</button> -->
+    <form name="form1">
+        Enter the value:<input type="text" id="t1">
+        <input type="button" value="print" onclick="findcube()">
+    </form>
+
+</body>
+</html>

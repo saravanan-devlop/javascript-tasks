@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function show(){
+        a=Number(document.getElementById('num1').value);
+        b=Number(document.getElementById('num2').value);
+        let myfunction=(a,b) =>a*b;
+        document.getElementById("demo").innerHTML=myfunction(a,b);
+        }
+    </script>
+    <label>Enter the value 1</label>
+    <input type="number" id="num1"><br>
+    <label>Enter the value 2</label>
+    <input type="number" id="num2"><br>
+    <input type="">
+    <input type="button" value="submit" onclick="show()">
+    <p id="demo"></p>
+</body>
+</html>

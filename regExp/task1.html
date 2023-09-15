@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function show() {
+            var name1 = document.getElementById("name").value;
+            var reg = /^[a-zA-Z0-9]+$/;
+            if (reg.test(name1)) {
+                alert("Submitted Successfully");
+            }
+            else {
+                alert("Enter valid Name");
+            }
+        }
+    </script>
+
+    <label> Username</label>
+    <input type="text" id="name">
+    <input type="button" value="submit" onclick="show()">
+</body>
+
+</html>

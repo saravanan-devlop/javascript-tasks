@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form name="form1">
+            Male<input type="radio" id="mgen" name="gender" value="male"/>
+            Female<input type="radio" id="fgen" name="gender" value="female"/>
+            <input type="button" value="length" onclick="show()"/>
+        </form>
+
+        <script>
+            function show(){
+            var len=document.getElementsByName('gender');
+            alert(len.length);
+            }
+        </script>
+    </body>
+</html>

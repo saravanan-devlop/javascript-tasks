@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+<body>
+    <!-- task1 -->
+    <!-- <script type="text/javascript">
+        let a="geographic location";
+        let b="job location";
+        console.log("you will be a",b,"in",a,);
+    </script> -->
+    <!--task2  -->
+    <!-- <script type="text/javascript">
+        let firstName="Ram", lastName="Kumar", age=30;
+        console.log("firstName:"+firstName,"\nlastname:"+lastName,"\nage:"+age);
+    </script> -->
+<!-- task3 -->
+    <!-- <script type="text/javascript">
+        let birth_year=2001, future_year=2040, gap=future_year-birth_year;
+        console.log("I will be either "+gap+" in "+future_year,);
+    </script> -->
+    <!-- task 4 -->
+    <!-- <script type="text/javascript">
+        let current_age=20, max_age=80,est_amnt=500,total=(max_age-current_age)*est_amnt;
+        console.log("You will need "+total+" to last you until the ripe old age of x");
+    </script> -->
+    <script>
+    function multi()
+    {
+        var a=parseInt(prompt("Enter the first value"));
+        var b=parseInt(prompt("Enter the second vlaue"));
+        var c=a*b;
+        alert("multiplication of two numbers:"+c);
+
+    }
+    // multi();
+    function div()
+    {
+        var a=parseInt(prompt("Enter the first value"));
+        var b=parseInt(prompt("Enter the second value"));
+        var c=a%b;
+        alert("Remainder of given value is "+c);
+    }
+    // div();
+    function four()
+    {
+        var x=10;
+        var y=parseInt(prompt("Enter 10 to get result 20"));
+        x+=y;
+        alert("Result "+x);
+    }
+    // four();
+    function five()
+    {
+        var x=20;
+        var y=parseInt(prompt("Enter 10 to get result 30"));
+        x+=y;
+        alert("Result "+x);
+
+    }
+    // five();
+
+    </script>
+
+    <h1>TASK5</h1>
+    <p>1.Multiply 5 with 7, alerting the result.</p>
+    <button onclick="multi()">Answer</button>
+    <p>2.Alert the reminder, once 13 is divided by 7.</p>
+    <button onclick="div()">Answer</button>
+    <p>3.Apply the right assignment operator, which will result in x being 20 (the same as x = x + y).</p>
+    <button onclick="four()">Answer</button>
+    <p>4.Apply the right assignment operator, which will result in x, being 30.</p>
+    <button onclick="five()">Answer</button>
+
+
+
+</body>
+</html>

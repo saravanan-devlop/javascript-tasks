@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Div creation
+        var div=document.createElement("div");
+
+        // TextNode creation 
+        var text=document.createTextNode("Login Page");
+
+        // InputBox creation 
+        var textBox=document.createElement("input");
+
+        // Button creation 
+        var button=document.createElement("button");
+
+        // TextNode creation 
+        var buttonText=document.createTextNode("Click");
+
+        // Append Button text 
+        button.appendChild(buttonText);
+
+        // Append Div text 
+        div.appendChild(text);
+
+        // Append Div text 
+        div.appendChild(textBox);
+
+        // Append Div text 
+        div.appendChild(button);
+
+        // Append Div text 
+        document.body.appendChild(div);
+    </script>
+    
+</body>
+</html>

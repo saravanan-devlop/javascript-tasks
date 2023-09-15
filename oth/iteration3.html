@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="inp1"/>
+    <input type="button" value="add" onclick="show1()"/>
+    <select id="sel" onclick="show2"></select>
+    <select id="iterate"></select>
+
+    <script>
+        function show1()
+        {
+            var opt=Number(document.getElementById('inp1').value);
+            var sel=document.getElementById('sel');
+            var opt1=document.createElement('option');
+            var node=document.createTextNode(opt);
+            opt1.appendChild(node);
+            sel.appendChild(opt1);
+            document.getElementById('inp1').value=null;
+        }
+        function show2()
+        {
+            var get=Number(document.getElementById('sel').value);
+            var select=document.getElementById('iterate');
+            var option1="<option>"+(get-1)+"</option>";
+            select.innerHTML=option1;
+
+
+        }
+    </script>
+</body>
+</html>

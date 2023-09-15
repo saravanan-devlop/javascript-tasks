@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form name="form1">
+            <label>Enter your name:</label>
+            <input type="text" name="myname"/>
+            <input type="button" value="submit" onclick="show()">
+        </form>
+
+
+        <script>
+            function show()
+            {
+                var getname=document.form1.myname.value;
+                alert(getname);
+            }
+        </script>
+    </body>
+</html>

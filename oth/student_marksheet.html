@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color:white;
+   
+            margin: 20px;
+            padding: 20px;
+            height: 50vh;
+            width: 50vw;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(blue,rgb(236, 36, 69));
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        tr,td{
+            padding: 1cqw;
+        }
+    </style>
+</head>
+<body>
+    <div><h1>STUDENT MARKSHEET</h1>
+    <form>
+        <table>
+    <tr><td><label>Roll.no</label></td>
+    <td><input type="text" id="roll"/></td></tr>
+    <tr><td><label>Name</label></td>
+    <td><input type="text" id="name"/></td></tr>
+    <tr><td><label>Mark1</label></td>
+    <td><input type="number"id="mar1"/></td></tr>
+    <tr><td><label>Mark2</label></td>
+    <td><input type="number"id="mar2"/></td></tr>
+    <tr><td><label>Mark3</label></td>
+    <td><input type="number"id="mar3"/></td></tr>
+    </table>
+    <button onclick="Result()">Click to view Result</button>
+    </form>
+    </div>
+    <script>
+        var avg,grade;
+        function Result(){
+            var a=document.getElementById("roll").value;
+            var b=document.getElementById("name").value;
+            var c=parseInt(document.getElementById("mar1").value);
+            var d=parseInt(document.getElementById("mar2").value);
+            var e=parseInt(document.getElementById("mar3").value);
+            var total=c+d+e;
+            avg=total/3;
+            grade = avg;
+            document.write("Roll.no    :"+a);
+            document.write("<br>Name   :"+b);
+            document.write("<br>Mark1  :"+c); 
+            document.write("<br>Mark2  :"+d);
+            document.write("<br>Mark3  :"+e);
+            document.write("<br>Total  :"+total);
+            document.write("<br>Average:"+avg);
+            if((c>=40)&&(d>=40)&&(e>=40))
+            {
+                document.write("<br>Result  :Pass");
+                grades();
+                
+            }
+            else
+            {
+                document.write("<br>Result  :Fail");
+                grades();
+            }
+            
+            
+
+            // switch(grade)
+            // {
+            //     case(grade>=80):
+            //         document.write("<br>Grade   :O");
+            //         break;
+            //     case(grade>=60):
+            //         document.write("<br>Grade   :A");
+            //         break;
+            //     case(grade>40):
+            //         document.write("<br>Grade   :B");
+            //         break;
+            //     default:
+            //         document.write("<br>Grade   :C");
+            //         break;
+
+            // }
+            
+        }
+        function grades(){
+        switch(true)
+            {
+                case(grade>=80):
+                    document.write("<br>Grade   :O");
+                    break;
+                case(grade>=60 && grade<80):
+                    document.write("<br>Grade   :A");
+                    break;
+                case(grade>40 && grade<60):
+                    document.write("<br>Grade   :B");
+                    break;
+                default:
+                    document.write("<br>Grade   :C");
+                    break;
+
+            }
+        }
+function findLargest()
+{
+var num1=20;
+var num2=30;
+var num3=40;
+if((num1>num2)&&(num1>num3))
+{
+console.log("num1 is greater than num2,num3");
+}
+else if(num2<num3)
+{
+console.log("num2 is greater than num1,num3");
+}
+else 
+{
+console.log("num3 is greater than num1,num2");
+}
+}
+findLargest();
+function findTriangleType()
+{
+var side1=20,side2=20,side3=20;
+if((side1==side2) && (side1==side3)&&(side2==side3)){
+console.log("Equilateral triangle");
+}
+else if((side1==side2)|| (side2==side3))
+{
+console.log("Isosceles triangle");
+}
+else
+{
+console.log("Scalene triangle");
+}
+}
+findTriangleType();
+    </script>
+</body>
+</html>

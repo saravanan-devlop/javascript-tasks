@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- html code -->
+
+    <form>
+        <h1>Employee Payroll</h1>
+        <label>Enter Employee number:</label>
+        <input type="number" id="eno"><br>
+
+        <label>Enter Employee name:</label>
+        <input type="text" id="ename"><br>
+
+        <label>Enter Designation:</label>
+        <input type="text" id="des"><br>
+
+        <label>Enter Basic Pay:</label>
+        <input type="number" id="bp" onkeyup="calc()"><br>
+
+        <label>HRA:</label>
+        <input type="number" id="hra" disabled><br>
+
+        <label>DA:</label>
+        <input type="number" id="da" disabled><br>
+
+        <label>PF:</label>
+        <input type="number" id="pf" disabled><br>
+
+        <label>Gross Pay:</label>
+        <input type="number" id="gp" disabled><br>
+
+        <label>Net Pay:</label>
+        <input type="number" id="np" disabled><br>
+
+        <button onclick="validate()">Submit</button>
+        </label>
+    </form>
+
+    <!-- js code -->
+
+    <script>
+        function calc()
+        {
+            var bp1=parseInt(document.getElementById('bp').value);
+            var hra1=document.getElementById('hra').value;
+            var da1=document.getElementById('da').value;
+            var pf1=document.getElementById('pf').value;
+
+            hra1=bp1*12/100;
+            da1=bp1*13/100;
+            pf1=bp1*15/100;
+
+            var gp1=bp1+hra1+da1;
+            var np1=gp1-pf1;
+
+            document.getElementById('hra').value=hra1;
+            document.getElementById('da').value=da1;
+            document.getElementById('pf').value=pf1;
+            document.getElementById('gp').value=gp1;
+            document.getElementById('np').value=np1;
+
+        }
+        function validate(){
+            var en1=document.getElementById('eno').value;
+            var ename=document.getElementById('ename').value;
+            var des1=document.getElementById('des').value;
+            var bp1=document.getElementById('bp').value;
+
+            if((en1!="")&&(ename1!="")&&(des1!="")&&(bp1!=""))
+            {
+                alert("Thank you for Submission");
+            }
+            else
+            {
+                alert("Please enter all the details");
+            }
+        }
+    </script>
+</body>
+</html>
